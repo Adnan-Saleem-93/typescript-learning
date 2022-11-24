@@ -1,9 +1,7 @@
-interface User {
-  id: number
-  name: string
-}
+let message: string = 'Hello, World.!!!'
 
-let user: User = {
-  id: 1,
-  name: 'user 1'
-}
+let header = document.createElement('h1')
+
+header.textContent = message
+
+document.body.appendChild(header)
