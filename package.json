@@ -1,0 +1,24 @@
+{
+	"name": "typescript-learning",
+	"version": "1.0.0",
+	"description": "a practice project for learning typescript",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"compile": "tsc index.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Adnan-Saleem-93/typescript-learning.git"
+	},
+	"author": "Adnan Saleem",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Adnan-Saleem-93/typescript-learning/issues"
+	},
+	"homepage": "https://github.com/Adnan-Saleem-93/typescript-learning#readme",
+	"devDependencies": {
+		"typescript": "^4.9.5"
+	}
+}
