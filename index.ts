@@ -1,8 +1,19 @@
-function greeter(person: string): string {
-	return "Hello, " + person;
+class Person {
+	fullName: string;
+	constructor(public firstName: string, public lastName: string) {
+		this.fullName = `${firstName} ${lastName}`;
+	}
 }
 
-let user: string = "User";
+// Interfaces
+interface User {
+	firstName: string;
+	lastName: string;
+}
 
-const output = greeter(user);
-console.log(output);
+const person = new Person("John", "Doe");
+
+const greetUser = (user: User) => {
+	return `Hello ${user.firstName} ${user.lastName}`;
+};
+document.body.innerText = greetUser(person);
