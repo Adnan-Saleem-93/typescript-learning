@@ -1,4 +1,3 @@
-"use strict";
 var Person = /** @class */ (function () {
     function Person(firstName, lastName) {
         this.firstName = firstName;
@@ -11,4 +10,8 @@ var person = new Person("John", "Doe");
 var greetUser = function (user) {
     return "Hello ".concat(user.firstName, " ").concat(user.lastName);
 };
-document.body.innerText = greetUser(person);
+var consoleUser = function (user) {
+    console.log("Hello ".concat(user.firstName, " ").concat(user.lastName));
+};
+var newPerson = new Person("Jon", "Snow");
+consoleUser(newPerson);

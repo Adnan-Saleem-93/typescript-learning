@@ -13,7 +13,12 @@ interface User {
 
 const person = new Person("John", "Doe");
 
-const greetUser = (user: User) => {
+const greetUser = (user: User): string => {
 	return `Hello ${user.firstName} ${user.lastName}`;
 };
-document.body.innerText = greetUser(person);
+const consoleUser = (user: User): void => {
+	console.log(`Hello ${user.firstName} ${user.lastName}`);
+};
+
+const newPerson = new Person("Jon", "Snow");
+consoleUser(newPerson);
