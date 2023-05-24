@@ -1,10 +1,20 @@
-interface User {
-	readonly fullName: { readonly firstName: string; lastName: string };
-	age?: number;
+interface Human {
+	gender: string;
+	age: number;
 }
-const user: User = {
+interface Person {
+	readonly fullName: { readonly firstName: string; lastName: string };
+	dateOfBirth: string;
+}
+interface Student extends Human, Person {
+	class?: number;
+}
+const user: Student = {
 	fullName: { firstName: "Jon", lastName: "Snow" },
-	age: 22,
+	class: 2,
+	gender: "male",
+	age: 8,
+	dateOfBirth: "05 August, 2003",
 };
 
 console.log(user);
